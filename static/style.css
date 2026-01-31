@@ -97,7 +97,17 @@ body {
     color: #555;
 }
 
-/* MOBILE — ОСТАЁТСЯ ПОПОЛАМ */
+/* АКЦЕНТНАЯ ФРАЗА */
+
+.about-accent {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+    font-weight: 400;
+}
+
+/* MOBILE — остаётся пополам */
 
 @media (max-width: 768px) {
 
@@ -116,6 +126,10 @@ body {
     .about-content p {
         font-size: 13px;
         line-height: 1.5;
+    }
+
+    .about-accent {
+        font-size: 14px;
     }
 
     .brand-title {
