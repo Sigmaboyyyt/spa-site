@@ -13,7 +13,6 @@
 <!-- HERO -->
 <section class="hero">
     <img src="{{ url_for('static', filename='images/spa.jpg') }}" class="hero-img">
-
     <a href="#about" class="top-button">О центре</a>
 
     <div class="overlay">
@@ -22,7 +21,7 @@
     </div>
 </section>
 
-<!-- О ЦЕНТРЕ 50/50 -->
+<!-- О ЦЕНТРЕ -->
 <section class="about-split" id="about">
     <div class="about-image">
         <img src="{{ url_for('static', filename='images/about.jpg') }}">
@@ -44,8 +43,7 @@
 
         <p>
             В работе используются только натуральные и бережные методики ухода,
-            направленные на активацию собственных ресурсов организма. Наши специалисты
-            помогают подобрать процедуры индивидуально.
+            направленные на активацию собственных ресурсов организма.
         </p>
 
         <p class="about-accent">
@@ -55,7 +53,11 @@
     </div>
 </section>
 
-<!-- ЭТИКЕТ 50/50 -->
+<div class="soft-divider">
+    <span>Holistic · Calm · Care</span>
+</div>
+
+<!-- ЭТИКЕТ -->
 <section class="etiquette-split">
     <div class="etiquette-image">
         <img src="{{ url_for('static', filename='images/etiquette.jpg') }}">
@@ -75,6 +77,10 @@
         </p>
     </div>
 </section>
+
+<div class="soft-divider">
+    <span>Care · Balance · Harmony</span>
+</div>
 
 <!-- ОТМЕНА И ПЕРЕНОС -->
 <section class="policy">
