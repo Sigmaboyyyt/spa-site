@@ -1,3 +1,5 @@
+/* BASE */
+
 html { scroll-behavior: smooth; }
 * { box-sizing: border-box; }
 
@@ -5,6 +7,7 @@ body {
     margin: 0;
     font-family: 'Cormorant Garamond', serif;
     color: #333;
+    background: #ffffff;
 }
 
 /* HERO */
@@ -15,6 +18,7 @@ body {
 
 .hero-img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -22,7 +26,7 @@ body {
     position: absolute;
     bottom: 12%;
     left: 8%;
-    color: white;
+    color: #ffffff;
 }
 
 .brand-title {
@@ -36,7 +40,7 @@ body {
     margin-top: 10px;
 }
 
-/* КНОПКА "О центре" */
+/* TOP BUTTON */
 
 .top-button {
     position: absolute;
@@ -51,7 +55,7 @@ body {
     z-index: 10;
 }
 
-/* SPLIT 50/50 БЛОКИ */
+/* SPLIT 50/50 SECTIONS */
 
 .about-split,
 .etiquette-split,
@@ -77,7 +81,7 @@ body {
     object-fit: cover;
 }
 
-/* ТЕКСТОВЫЕ ЧАСТИ */
+/* TEXT AREAS */
 
 .about-content,
 .etiquette-content,
@@ -111,7 +115,7 @@ body {
     font-size: 20px;
 }
 
-/* РАЗДЕЛИТЕЛИ */
+/* DIVIDERS */
 
 .soft-divider {
     height: 140px;
@@ -119,12 +123,12 @@ body {
     align-items: center;
     justify-content: center;
     background: #faf9f6;
-    color: #bbb;
+    color: #bcbcbc;
     letter-spacing: 4px;
     font-size: 14px;
 }
 
-/* POLICY (текстурный фон) */
+/* POLICY BLOCK */
 
 .policy {
     background: url('/static/images/policy-bg.jpg') center/cover no-repeat;
@@ -135,7 +139,7 @@ body {
     max-width: 900px;
     margin: auto;
     text-align: center;
-    background: rgba(255,255,255,0.88);
+    background: rgba(255,255,255,0.9);
     padding: 60px;
 }
 
@@ -149,7 +153,7 @@ body {
     line-height: 1.8;
 }
 
-/* CALM (фон спокойствия) */
+/* CALM BLOCK */
 
 .calm {
     background: url('/static/images/calm-bg.jpg') center/cover no-repeat;
@@ -160,7 +164,7 @@ body {
     max-width: 900px;
     margin: auto;
     text-align: center;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.92);
     padding: 60px;
 }
 
@@ -192,27 +196,39 @@ body {
     margin-bottom: 30px;
 }
 
-.phone {
-    font-size: 36px;
-    text-decoration: none;
-    color: #333;
-    letter-spacing: 3px;
+.contact-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
-/* MOBILE */
+.phone {
+    font-size: 34px;
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+/* MOBILE ADAPTATION */
 
 @media (max-width: 768px) {
 
     .about-split,
     .etiquette-split,
     .philosophy-split {
-        flex-direction: row; /* остаётся 50/50 */
+        flex-direction: row; /* сохраняем 50/50 на телефоне */
     }
 
     .about-content,
     .etiquette-content,
     .philosophy-content {
         padding: 20px;
+    }
+
+    .about-content h2,
+    .etiquette-content h2,
+    .philosophy-content h2 {
+        font-size: 20px;
     }
 
     .about-content p,
