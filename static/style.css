@@ -8,11 +8,12 @@ body {
 
 /* HERO */
 
-.hero { position: relative; }
+.hero {
+    position: relative;
+}
 
 .hero-img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -26,18 +27,29 @@ body {
 .brand-title {
     font-size: 56px;
     letter-spacing: 6px;
-    margin: 0;
 }
 
 .brand-subtitle {
     font-size: 20px;
 }
 
+/* КНОПКА */
+
+.top-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
 /* О ЦЕНТРЕ */
 
 .about-split {
     display: flex;
-    width: 100%;
 }
 
 .about-image,
@@ -52,19 +64,11 @@ body {
 }
 
 .about-content {
-    background: #f7f7f5;
     padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: #f7f7f5;
 }
 
-.about-content h2 { font-size: 38px; }
-.about-content p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-}
+.about-content h2 { font-size: 36px; }
 
 .about-accent {
     margin-top: 20px;
@@ -75,7 +79,6 @@ body {
 
 .etiquette-split {
     display: flex;
-    width: 100%;
 }
 
 .etiquette-image,
@@ -90,37 +93,20 @@ body {
 }
 
 .etiquette-content {
-    background: #f7f7f5;
     padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: #f7f7f5;
 }
 
-.etiquette-content h2 { font-size: 38px; }
-.etiquette-content h3 { font-size: 22px; color: #555; }
-.etiquette-content p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-}
-
-/* MOBILE — всё остаётся пополам */
+/* MOBILE */
 
 @media (max-width: 768px) {
+    .about-split,
+    .etiquette-split {
+        flex-direction: row;
+    }
 
     .about-content,
     .etiquette-content {
         padding: 20px;
-    }
-
-    .about-content h2,
-    .etiquette-content h2 {
-        font-size: 18px;
-    }
-
-    .about-content p,
-    .etiquette-content p {
-        font-size: 13px;
     }
 }
