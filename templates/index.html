@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxe Spa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<section class="hero">
+
+    <img src="{{ url_for('static', filename='images/spa.jpg') }}" class="hero-img">
+
+    <!-- Кнопка О нас -->
+    <a href="#about" class="top-button">О нас</a>
+
+    <!-- Кнопка Procedures -->
+    <a href="https://sites.google.com/view/proceduresannapalamar"
+       class="procedures-button"
+       target="_blank">
+       Procedures
+    </a>
+
+    <div class="overlay">
+        <h1>Holistic Luxury Spa</h1>
+        <p>Гармония тела и души</p>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+    <div class="about-container">
+        <h2>О нас</h2>
+        <p class="about-text">
+            Мы вдохновлены идеей восприятия тела и души как единого целого.
+            Наша цель — помочь каждому гостю обрести гармонию физического
+            самочувствия и душевного покоя через атмосферу, ритуалы и
+            профессиональный уход.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
