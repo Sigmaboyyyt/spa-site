@@ -1,6 +1,146 @@
-/* ... твои существующие стили выше ... */
+html { scroll-behavior: smooth; }
+* { box-sizing: border-box; }
 
-/* CALM BLOCK */
+body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    color: #333;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    color: white;
+}
+
+.brand-title {
+    font-size: 56px;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+.brand-subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* КНОПКА "О центре" */
+
+.top-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    z-index: 10;
+}
+
+/* SPLIT БЛОКИ */
+
+.about-split,
+.etiquette-split {
+    display: flex;
+    width: 100%;
+}
+
+.about-image,
+.about-content,
+.etiquette-image,
+.etiquette-content {
+    flex: 1;
+}
+
+.about-image img,
+.etiquette-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ТЕКСТОВЫЕ ЧАСТИ */
+
+.about-content,
+.etiquette-content {
+    padding: 60px;
+    background: #f7f7f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content h2,
+.etiquette-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.about-content p,
+.etiquette-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-accent {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* РАЗДЕЛИТЕЛЬ */
+
+.soft-divider {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #faf9f6;
+    color: #bbb;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+/* POLICY — текстурный фон */
+
+.policy {
+    background: url('/static/images/policy-bg.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+}
+
+.policy-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255,255,255,0.88);
+    padding: 60px;
+}
+
+.policy-content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.policy-content p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* CALM — атмосфера спокойствия */
 
 .calm {
     background: url('/static/images/calm-bg.jpg') center/cover no-repeat;
@@ -11,7 +151,7 @@
     max-width: 900px;
     margin: auto;
     text-align: center;
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.9);
     padding: 60px;
 }
 
@@ -23,25 +163,34 @@
 .calm-content p {
     font-size: 20px;
     line-height: 1.8;
-    color: #555;
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
-    .calm {
-        padding: 70px 20px;
+
+    .about-split,
+    .etiquette-split {
+        flex-direction: row;
     }
 
+    .about-content,
+    .etiquette-content {
+        padding: 20px;
+    }
+
+    .about-content p,
+    .etiquette-content p {
+        font-size: 13px;
+    }
+
+    .soft-divider {
+        height: 80px;
+        font-size: 12px;
+    }
+
+    .policy-content,
     .calm-content {
         padding: 30px 20px;
-    }
-
-    .calm-content h2 {
-        font-size: 24px;
-    }
-
-    .calm-content p {
-        font-size: 14px;
     }
 }
