@@ -25,8 +25,6 @@ body {
     display: block;
 }
 
-/* Текст поверх фото */
-
 .overlay {
     position: absolute;
     bottom: 12%;
@@ -34,8 +32,6 @@ body {
     color: white;
     max-width: 80%;
 }
-
-/* Брендинг */
 
 .brand-title {
     font-size: 56px;
@@ -51,7 +47,7 @@ body {
     font-weight: 300;
 }
 
-/* Кнопка О нас */
+/* КНОПКИ */
 
 .top-button {
     position: absolute;
@@ -66,8 +62,6 @@ body {
     backdrop-filter: blur(6px);
     z-index: 10;
 }
-
-/* Кнопка Procedures */
 
 .procedures-button {
     position: absolute;
@@ -88,29 +82,44 @@ body {
     background: #f1f1f1;
 }
 
-/* ABOUT */
+/* SPLIT ABOUT BLOCK */
 
-.about {
+.about-split {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-content {
+    flex: 1;
+    padding: 80px 60px;
     background: #f7f7f5;
-    padding: 100px 20px;
-    scroll-margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.about-container {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 42px;
+.about-content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
     letter-spacing: 2px;
-    margin-bottom: 40px;
 }
 
-.about-text {
+.about-content p {
     font-size: 20px;
     line-height: 1.8;
+    margin-bottom: 20px;
     color: #555;
 }
 
@@ -140,15 +149,19 @@ body {
         font-size: 14px;
     }
 
-    .about {
-        padding: 60px 20px;
+    .about-split {
+        flex-direction: column;
     }
 
-    .about h2 {
+    .about-content {
+        padding: 40px 20px;
+    }
+
+    .about-content h2 {
         font-size: 26px;
     }
 
-    .about-text {
+    .about-content p {
         font-size: 16px;
     }
 }
