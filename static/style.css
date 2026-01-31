@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: #333;
 }
 
@@ -38,16 +38,16 @@ body {
 /* Брендинг */
 
 .brand-title {
-    font-size: 48px;
-    letter-spacing: 8px;
+    font-size: 56px;
+    letter-spacing: 10px;
     font-weight: 300;
     margin: 0;
 }
 
 .brand-subtitle {
     margin-top: 12px;
-    font-size: 18px;
-    letter-spacing: 3px;
+    font-size: 20px;
+    letter-spacing: 4px;
     font-weight: 300;
 }
 
@@ -103,13 +103,13 @@ body {
 }
 
 .about h2 {
-    font-size: 36px;
-    letter-spacing: 2px;
+    font-size: 42px;
+    letter-spacing: 3px;
     margin-bottom: 40px;
 }
 
 .about-text {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
     color: #555;
 }
@@ -124,8 +124,8 @@ body {
     }
 
     .brand-title {
-        font-size: 28px;
-        letter-spacing: 4px;
+        font-size: 30px;
+        letter-spacing: 5px;
     }
 
     .brand-subtitle {
@@ -145,7 +145,7 @@ body {
     }
 
     .about h2 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .about-text {
