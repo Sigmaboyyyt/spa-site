@@ -12,7 +12,7 @@ body {
     color: #333;
 }
 
-/* HERO — mobile first */
+/* HERO */
 
 .hero {
     position: relative;
@@ -35,10 +35,20 @@ body {
     max-width: 80%;
 }
 
-.overlay h1 {
-    font-size: 42px;
-    letter-spacing: 3px;
+/* Брендинг */
+
+.brand-title {
+    font-size: 48px;
+    letter-spacing: 8px;
+    font-weight: 300;
     margin: 0;
+}
+
+.brand-subtitle {
+    margin-top: 12px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 300;
 }
 
 /* Кнопка О нас */
@@ -113,8 +123,14 @@ body {
         left: 5%;
     }
 
-    .overlay h1 {
-        font-size: 26px;
+    .brand-title {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+
+    .brand-subtitle {
+        font-size: 14px;
+        letter-spacing: 2px;
     }
 
     .procedures-button {
