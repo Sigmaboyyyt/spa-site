@@ -48,6 +48,7 @@ body {
 
 .about-split {
     display: flex;
+    margin-bottom: 80px;   /* ← воздух между блоками */
 }
 
 .about-image,
@@ -83,6 +84,7 @@ body {
 
 .etiquette-split {
     display: flex;
+    margin-bottom: 80px;   /* ← воздух между блоками */
 }
 
 .etiquette-image,
@@ -101,12 +103,14 @@ body {
     background: #f7f7f5;
 }
 
-/* MOBILE — пополам */
+/* MOBILE — пополам и меньше отступ */
 
 @media (max-width: 768px) {
+
     .about-split,
     .etiquette-split {
         flex-direction: row;
+        margin-bottom: 40px;
     }
 
     .about-content,
