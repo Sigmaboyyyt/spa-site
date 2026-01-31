@@ -36,7 +36,7 @@ body {
     margin-top: 10px;
 }
 
-/* КНОПКА */
+/* КНОПКА "О центре" */
 
 .top-button {
     position: absolute;
@@ -51,7 +51,7 @@ body {
     z-index: 10;
 }
 
-/* SPLIT БЛОКИ 50/50 */
+/* SPLIT 50/50 БЛОКИ */
 
 .about-split,
 .etiquette-split,
@@ -124,7 +124,7 @@ body {
     font-size: 14px;
 }
 
-/* POLICY */
+/* POLICY (текстурный фон) */
 
 .policy {
     background: url('/static/images/policy-bg.jpg') center/cover no-repeat;
@@ -149,7 +149,7 @@ body {
     line-height: 1.8;
 }
 
-/* CALM */
+/* CALM (фон спокойствия) */
 
 .calm {
     background: url('/static/images/calm-bg.jpg') center/cover no-repeat;
@@ -174,7 +174,7 @@ body {
     line-height: 1.8;
 }
 
-/* CONTACT */
+/* CONTACT / WHATSAPP */
 
 .contact {
     background: #f7f7f5;
@@ -192,12 +192,6 @@ body {
     margin-bottom: 30px;
 }
 
-.contact-content p {
-    font-size: 20px;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
 .phone {
     font-size: 36px;
     text-decoration: none;
@@ -212,7 +206,7 @@ body {
     .about-split,
     .etiquette-split,
     .philosophy-split {
-        flex-direction: row;
+        flex-direction: row; /* остаётся 50/50 */
     }
 
     .about-content,
