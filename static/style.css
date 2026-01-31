@@ -22,14 +22,8 @@ body {
     color: white;
 }
 
-.brand-title {
-    font-size: 56px;
-    letter-spacing: 6px;
-}
-
-.brand-subtitle {
-    font-size: 20px;
-}
+.brand-title { font-size: 56px; letter-spacing: 6px; }
+.brand-subtitle { font-size: 20px; }
 
 /* КНОПКА */
 
@@ -48,13 +42,11 @@ body {
 
 .about-split {
     display: flex;
-    margin-bottom: 80px;   /* ← воздух между блоками */
+    margin-bottom: 80px;
 }
 
 .about-image,
-.about-content {
-    flex: 1;
-}
+.about-content { flex: 1; }
 
 .about-image img {
     width: 100%;
@@ -67,30 +59,23 @@ body {
     background: #f7f7f5;
 }
 
-.about-content h2 { font-size: 36px; }
-
 .about-content p {
     font-size: 18px;
     line-height: 1.8;
     color: #555;
 }
 
-.about-accent {
-    margin-top: 20px;
-    font-size: 20px;
-}
+.about-accent { font-size: 20px; }
 
 /* ЭТИКЕТ */
 
 .etiquette-split {
     display: flex;
-    margin-bottom: 80px;   /* ← воздух между блоками */
+    margin-bottom: 80px;
 }
 
 .etiquette-image,
-.etiquette-content {
-    flex: 1;
-}
+.etiquette-content { flex: 1; }
 
 .etiquette-image img {
     width: 100%;
@@ -103,10 +88,29 @@ body {
     background: #f7f7f5;
 }
 
-/* MOBILE — пополам и меньше отступ */
+/* POLICY С ТЕКСТУРОЙ */
+
+.policy {
+    background: url('/static/images/policy-bg.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+}
+
+.policy-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255,255,255,0.85);
+    padding: 60px;
+}
+
+.policy-content p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* MOBILE */
 
 @media (max-width: 768px) {
-
     .about-split,
     .etiquette-split {
         flex-direction: row;
@@ -118,8 +122,7 @@ body {
         padding: 20px;
     }
 
-    .about-content p,
-    .etiquette-content p {
-        font-size: 13px;
+    .policy-content {
+        padding: 30px 20px;
     }
 }
