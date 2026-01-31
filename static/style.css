@@ -59,11 +59,11 @@ body {
 .top-button { top: 20px; }
 .procedures-button { top: 70px; }
 
-/* SPLIT ABOUT */
+/* БЛОК 50/50 */
 
 .about-split {
     display: flex;
-    height: 520px;
+    width: 100%;
 }
 
 .about-image,
@@ -92,17 +92,17 @@ body {
 
 .about-content p {
     font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 12px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: #555;
 }
 
-/* MOBILE — остаётся пополам */
+/* MOBILE — ОСТАЁТСЯ ПОПОЛАМ */
 
 @media (max-width: 768px) {
 
     .about-split {
         flex-direction: row;
-        height: 320px;
     }
 
     .about-content {
@@ -114,7 +114,8 @@ body {
     }
 
     .about-content p {
-        font-size: 12px;
+        font-size: 13px;
+        line-height: 1.5;
     }
 
     .brand-title {
