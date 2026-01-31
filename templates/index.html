@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Центр Анны Паламарь</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,6 @@
 <section class="hero">
     <img src="{{ url_for('static', filename='images/spa.jpg') }}" class="hero-img">
 
-    <!-- КНОПКИ -->
     <a href="https://sites.google.com/view/proceduresannapalamar"
        class="top-button procedures-button"
        target="_blank">Procedures</a>
@@ -47,8 +47,8 @@
 
         <p>
             В работе используются только натуральные и бережные методики ухода,
-            направленные на активацию собственных ресурсов организма. Наши специалисты
-            обладают высокой квалификацией и помогают подобрать процедуры индивидуально.
+            направленные на активацию собственных ресурсов организма.
+            Наши специалисты обладают высокой квалификацией и помогают подобрать процедуры индивидуально.
         </p>
 
         <p class="about-accent">
@@ -63,8 +63,9 @@
 <!-- ЭТИКЕТ -->
 <section class="etiquette-split">
     <div class="etiquette-image">
-        <img src="{{ url_for('static', filename='images/etiquette2.jpg') }}">
+        <img src="{{ url_for('static', filename='images/etiquette.jpg') }}">
     </div>
+
     <div class="etiquette-content">
         <h2>Этикет посещения центра</h2>
 
@@ -118,8 +119,15 @@
         <h2>Наша философия ухода</h2>
 
         <p>
-            В Центре Анны Паламарь используются только натуральные методы ухода без инъекций и агрессивных вмешательств.
+            В Центре Анны Паламарь используются только натуральные методы ухода без инъекций и агрессивных вмешательств. Все процедуры направлены на:
         </p>
+
+        <ul>
+            <li>восстановление естественного баланса кожи</li>
+            <li>улучшение микроциркуляции и лимфотока</li>
+            <li>глубокое расслабление мышц лица и тела</li>
+            <li>естественное омоложение и сияние кожи</li>
+        </ul>
 
         <p class="philosophy-accent">
             Особое место занимает Bellabaci-терапия — метод вакуумного массажа,

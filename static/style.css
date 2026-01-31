@@ -56,7 +56,7 @@ body {
 }
 
 .procedures-button {
-    right: 140px; /* рядом с кнопкой "О центре" */
+    right: 140px;
 }
 
 /* SPLIT 50/50 SECTIONS */
@@ -135,7 +135,7 @@ body {
 /* POLICY BLOCK */
 
 .policy {
-    background: url('/static/images/policy-bg.jpg') center/cover no-repeat;
+    background: url('images/policy-bg.jpg') center/cover no-repeat;
     padding: 120px 20px;
 }
 
@@ -150,7 +150,7 @@ body {
 /* CALM BLOCK */
 
 .calm {
-    background: url('/static/images/calm-bg.jpg') center/cover no-repeat;
+    background: url('images/calm-bg.jpg') center/cover no-repeat;
     padding: 140px 20px;
 }
 
@@ -199,7 +199,7 @@ body {
     .about-split,
     .etiquette-split,
     .philosophy-split {
-        flex-direction: row; /* сохраняем 50/50 */
+        flex-direction: row;
     }
 
     .about-content,
